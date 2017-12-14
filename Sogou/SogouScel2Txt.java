@@ -22,8 +22,13 @@ public class SogouScel2Txt
 {
 	
 	public static void main(String[] args)throws Exception 
-	{		
-   	 sogou("G:/各大输入法词库/搜狗/sogou/城市信息大全/安徽/安徽.scel","G:/各大输入法词库/搜狗/sogou/城市信息大全/安徽/安徽.txt",false);
+	{
+	  if(args.length < 2){
+             System.out.println("inFile outFile");
+          }else{
+             sogou(args[0],args[1],false);
+          }	
+   	 //sogou("G:/各大输入法词库/搜狗/sogou/城市信息大全/安徽/安徽.scel","G:/各大输入法词库/搜狗/sogou/城市信息大全/安徽/安徽.txt",false);
 	}
    
 	/**
